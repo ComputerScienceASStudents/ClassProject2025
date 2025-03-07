@@ -18,6 +18,9 @@ public class ClassProject2025
      */
     public static void main(String[] args) {
         System.out.println("Hello World");
+        
+        
+        System.out.println("Good-bye World!");
     }
 
 }
