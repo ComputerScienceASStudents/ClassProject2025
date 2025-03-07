@@ -1,6 +1,8 @@
 /** Required package class namespace */
 package classproject2025;
 
+import userinterfaces.MainUI;
+
 
 /*
  * ClassProject2025 - description
@@ -18,7 +20,8 @@ public class ClassProject2025
      */
     public static void main(String[] args) {
         System.out.println("Hello CS42SAP Students...");
-        System.out.println("This is the master branch of your project!");
+        System.out.println("This is Mr. Wachs' branch of your project!");
+        MainUI ui = new MainUI();
     }
 
 }
