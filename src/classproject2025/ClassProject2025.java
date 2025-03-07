@@ -19,6 +19,12 @@ public class ClassProject2025
     public static void main(String[] args) {
         System.out.println("Hello World");
         
+        String yes = "Hello World";
+        
+        for (int i = 0; i < yes.length(); i++) {
+            System.out.print(yes.charAt(i));
+        }
+        
         
         System.out.println("Good-bye World!");
     }
