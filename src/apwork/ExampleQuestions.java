@@ -1,5 +1,6 @@
 package apwork;
  
+import apwork.questions.APClassQuestionArathmaticExeption;
 import apwork.questions.EQ1;
 import apwork.questions.Q16;
 import apwork.questions.Q2;
@@ -28,7 +29,8 @@ public class ExampleQuestions
         
         String first = JOptionPane.showInputDialog(null, "Alright what question set"
                 + " are you reviewing this time? \n\n enter 1, 2, or 3 for the set"
-                + " you want to go to.", "My Ap stuff", JOptionPane.PLAIN_MESSAGE);
+                + " you want to go to. or 4 for other.", "My Ap stuff",
+                JOptionPane.PLAIN_MESSAGE);
         
         switch(first){
             case"1":
@@ -39,6 +41,9 @@ public class ExampleQuestions
                 break;
             case"3":
                 
+                break;
+            case"4":
+                other();
                 break;
             default:
                 System.out.println("don't fool arownd nerd");
@@ -91,6 +96,20 @@ public class ExampleQuestions
                 System.out.println("how did you type " + choice + "? how do you "
                         + "manage that?" );
         }
+    }
+    
+    private void set2(){
+        
+    }
+    
+    private void set3(){
+        
+    }
+    
+    private void other(){
+        
+        APClassQuestionArathmaticExeption ap = new APClassQuestionArathmaticExeption();
+        
     }
      
     
