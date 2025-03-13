@@ -1,6 +1,9 @@
 /** Required package class namespace */
 package classproject2025;
 
+import classLessons.SearchingTest;
+import playground.ApPracticeSets;
+
 
 /*
  * ClassProject2025 - description
@@ -17,16 +20,15 @@ public class ClassProject2025
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hello World");
         
-        String yes = "Hello World";
+        //class stuff - very boring (pls dont hurt me Mr Wachs)
+        SearchingTest s = new SearchingTest();
         
-        for (int i = 0; i < yes.length(); i++) {
-            System.out.print(yes.charAt(i));
-        }
+        //playground
+        ApPracticeSets a = new ApPracticeSets();
         
         
-        System.out.println("Good-bye World!");
+        
     }
 
 }
