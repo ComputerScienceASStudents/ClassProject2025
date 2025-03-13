@@ -997,7 +997,159 @@ public class CompyScience42APClassProject
         
         
         
-        
+        // Notes:
+        //
+        // - The integer to multiply Math.random() by needs to be the maximum minus
+        //   the minimum, accounting for 1
+        //   Ex: Between 25 and 60 = (int) (Math.random() * 36) + 25
+        //
+        //   Common formula: (high - low + 1) * random + low
+        //
+        ////////////////////////////////////////////////////////////////////////////
+        //
+        // - IndexOf method returns an integer
+        //
+        ////////////////////////////////////////////////////////////////////////////
+        //
+        // - Expression x *= y is the same as x = x * y
+        //
+        ////////////////////////////////////////////////////////////////////////////
+        //
+        // - Case of:
+        //
+        //   super.method(calculate a value then print result);
+        //   System.out.print(value);
+        //
+        //   The original value is printed, not the new value calculated by the called
+        //   method. The calculating method saves the new value, but outside the method,
+        //   only the original value is saved
+        //   
+        //   - Similarly: int integer = number1;   =    int integer = 2;
+        //                number1 = number2;       =    2 = 5;
+        //                number2 = integer;       =    5 = integer (Still 2);
+        //                return number2;          =    return 2;
+        //
+        //   integer and number1 are seperate, and int integer = number1; shares their
+        //   values. When number1 becomes number2, integer saves the original value
+        //   of number1. number2 then becomes number1's value.
+        //
+        ////////////////////////////////////////////////////////////////////////////
+        //
+        // - Case of: ClassB extends ClassA
+        //
+        //   ClassA class = new ClassB();
+        //
+        //   - When a method in ClassA is called and the method is overridden in ClassB,
+        //     the program executes the code in the ClassB method
+        //   - If a method in ClassB does not exist in ClassA, it cannot be called
+        //     Ex: In ClassA, a method called multiply() exists, and in ClassB, a method
+        //         called divide() exists. Therefore, class.divide() won't work, because
+        //         divide() does not override a method in ClassA
+        //   - However, (ClassB class).divide(); works because it casts the object into
+        //     a ClassB, allowing access to the method divide();
+        //   - Different Case:
+        //
+        //     ClassA class = new ClassB;
+        //     System.out.println(class.method());
+        //     
+        //     In ClassA:
+        //
+        //     public String method() {
+        //         return "Expression 1";
+        //     }
+        //
+        //     In ClassB:
+        //
+        //     @Override
+        //     public String method() {
+        //         super.method();
+        //         return "Expression 2";
+        //     }
+        //
+        //     System only prints Expression 2, while super.method() returns Expression 1,
+        //     but the method in ClassB (which is the overriding method being called,
+        //     not the method in ClassA) returns Expression 2. Therefore, only
+        //     Expression 2 prints. The returned Expression 1 from super.method(); is
+        //     not stored or used at any time.
+        //
+        ////////////////////////////////////////////////////////////////////////////
+        //
+        // - Modulo: %
+        //   Takes the remainder of a division
+        //   Ex: 5 % 2 = 1 Because 5 / 2 = 2 r 1 -> Take the "r 1" as the answer
+        //
+        ////////////////////////////////////////////////////////////////////////////
+        //
+        // - An integer divided by an integer that leaves a decimal -> the decimal points
+        //   are removed
+        //   Ex: int integer = 5 / 2 = 2.5 -> 2
+        //
+        //   - When a decimal such as -0.1 is rounded, it becomes 0
+        //
+        ////////////////////////////////////////////////////////////////////////////
+        //
+        // - Handling integers with doubles in math operations turns the integers into
+        //   doubles
+        //
+        ////////////////////////////////////////////////////////////////////////////
+        //
+        // - Anatomy of an enhanced for loop with example:
+        //
+        //   char[] arrayOfChars = {a, b, c};
+        //
+        //   for (for (char x : arrayOfChars) {
+        //       System.out.println(x);
+        //   }
+        //
+        //   Output: a
+        //           b
+        //           c
+        //
+        //   The value of x becomes the value of each index of the array from 0 to the
+        //   max. In the first loop, x becomes "a", then "b", then "c". It is the same
+        //   as this loop:
+        //
+        //   for (int x = 0; x < arrayOfChars.length; x++) {
+        //       System.out.println(arrayOfChars[x]);
+        //   }
+        //
+        //   In the enhanced for loop, x becomes the value of arrayOfChars[x], as to
+        //   not have to write arrayOfChars[x] within the for loop, instead simply
+        //   writing x.
+        //
+        ////////////////////////////////////////////////////////////////////////////
+        //
+        // - Declaring and printing a matrix because why not:
+        //
+        //   int row = 5;
+        //   int column = 6;
+        //   int [][] matrix = new int [row][column];
+        //   for (int i = 0; i < matrix.length; i++) {
+        //       for (int j = 0; j < matrix.length; j++) {
+        //           System.out.print(matrix[i][j] + "\t");
+        //       }
+        //       System.out.println();
+        //   }
+        //
+        ////////////////////////////////////////////////////////////////////////////
+        //
+        // - "||" returns false only if both conditions are false:
+        //
+        //   (true || true) = true
+        //   (true || false) = true
+        //   (false || false) = false
+        //   (!true || false) = false
+        //
+        //   - "&&" returns true only if both conditions are true:
+        //
+        //    (true && true) = true
+        //    (true && false) = false
+        //    (false && false) = false
+        //    (!false && false) = true
+        //
+        ////////////////////////////////////////////////////////////////////////////
+        //
+        //
         
         
         
