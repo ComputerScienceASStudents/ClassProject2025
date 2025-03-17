@@ -1,5 +1,5 @@
 /** Required package class namespace */
-package classproject2025;
+package code;
 
 
 /*
@@ -8,7 +8,7 @@ package classproject2025;
  * @author Mr. Wachs
  * @since Mar 6, 2025
 */
-public class ClassProject2025
+public class Start
 {
 
     /**
@@ -18,8 +18,10 @@ public class ClassProject2025
      */
     public static void main(String[] args) {
         System.out.println("Hello World");
+//        SearchingAndSorting arrayTravelTest = new SearchingAndSorting();
+//        arrayTravelTest.outputNames();
         
-        System.out.println("test");
+        SillyCastingTests.testBooleanCastRules();
     }
 
 }
