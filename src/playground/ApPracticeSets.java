@@ -11,18 +11,29 @@ package playground;
  */
 public class ApPracticeSets {
 
+    
     public ApPracticeSets() {
         
-        //for loop syeysyeyseysye
-        String words[] = {"gaming", "king", "ling"};
+        int itemsSold[] = {48, 50, 37, 62};
+        System.out.println(itemsSold[3]);
         
         
-        //"for every item(String) in words....
-        //no need to put String word = words[i]
-        for (String word : words) {
-            String a = "";
-            a = word.substring(word.length() - 3);
-            System.out.println(a);
-        }
+//        //for loop syeysyeyseysye
+//        String words[] = {"ten", "gaming", "card", "king", "ling"};
+//        final String J = "ing";
+//        
+//        //"for every item(String) in words....
+//        //no need to put String word = words[i]
+//        for (String word : words) {
+//            String a = "";
+//            a = word.substring(word.length() - 3);
+//            
+//            if (a.equals(J)) {
+//                System.out.println(word);
+//            }
+//        }
+        
+        
+        
     }
 }

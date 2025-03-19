@@ -3,6 +3,7 @@ package classproject2025;
 
 import classLessons.SearchingTest;
 import playground.ApPracticeSets;
+import playground.ChallengesTest;
 
 
 /*
@@ -22,10 +23,11 @@ public class ClassProject2025
     public static void main(String[] args) {
         
         //class stuff - very boring (pls dont hurt me Mr Wachs)
-        SearchingTest s = new SearchingTest();
+        //SearchingTest s = new SearchingTest();
         
         //playground
-        ApPracticeSets a = new ApPracticeSets();
+        ApPracticeSets a = new ApPracticeSets(); //moved to challenges test
+        ChallengesTest c = new ChallengesTest();
         
         
         
