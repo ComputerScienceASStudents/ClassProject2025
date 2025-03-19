@@ -997,159 +997,177 @@ public class CompyScience42APClassProject
         
         
         
-        // Notes:
-        //
-        // - The integer to multiply Math.random() by needs to be the maximum minus
-        //   the minimum, accounting for 1
-        //   Ex: Between 25 and 60 = (int) (Math.random() * 36) + 25
-        //
-        //   Common formula: (high - low + 1) * random + low
-        //
-        ////////////////////////////////////////////////////////////////////////////
-        //
-        // - IndexOf method returns an integer
-        //
-        ////////////////////////////////////////////////////////////////////////////
-        //
-        // - Expression x *= y is the same as x = x * y
-        //
-        ////////////////////////////////////////////////////////////////////////////
-        //
-        // - Case of:
-        //
-        //   super.method(calculate a value then print result);
-        //   System.out.print(value);
-        //
-        //   The original value is printed, not the new value calculated by the called
-        //   method. The calculating method saves the new value, but outside the method,
-        //   only the original value is saved
-        //   
-        //   - Similarly: int integer = number1;   =    int integer = 2;
-        //                number1 = number2;       =    2 = 5;
-        //                number2 = integer;       =    5 = integer (Still 2);
-        //                return number2;          =    return 2;
-        //
-        //   integer and number1 are seperate, and int integer = number1; shares their
-        //   values. When number1 becomes number2, integer saves the original value
-        //   of number1. number2 then becomes number1's value.
-        //
-        ////////////////////////////////////////////////////////////////////////////
-        //
-        // - Case of: ClassB extends ClassA
-        //
-        //   ClassA class = new ClassB();
-        //
-        //   - When a method in ClassA is called and the method is overridden in ClassB,
-        //     the program executes the code in the ClassB method
-        //   - If a method in ClassB does not exist in ClassA, it cannot be called
-        //     Ex: In ClassA, a method called multiply() exists, and in ClassB, a method
-        //         called divide() exists. Therefore, class.divide() won't work, because
-        //         divide() does not override a method in ClassA
-        //   - However, (ClassB class).divide(); works because it casts the object into
-        //     a ClassB, allowing access to the method divide();
-        //   - Different Case:
-        //
-        //     ClassA class = new ClassB;
-        //     System.out.println(class.method());
-        //     
-        //     In ClassA:
-        //
-        //     public String method() {
-        //         return "Expression 1";
-        //     }
-        //
-        //     In ClassB:
-        //
-        //     @Override
-        //     public String method() {
-        //         super.method();
-        //         return "Expression 2";
-        //     }
-        //
-        //     System only prints Expression 2, while super.method() returns Expression 1,
-        //     but the method in ClassB (which is the overriding method being called,
-        //     not the method in ClassA) returns Expression 2. Therefore, only
-        //     Expression 2 prints. The returned Expression 1 from super.method(); is
-        //     not stored or used at any time.
-        //
-        ////////////////////////////////////////////////////////////////////////////
-        //
-        // - Modulo: %
-        //   Takes the remainder of a division
-        //   Ex: 5 % 2 = 1 Because 5 / 2 = 2 r 1 -> Take the "r 1" as the answer
-        //
-        ////////////////////////////////////////////////////////////////////////////
-        //
-        // - An integer divided by an integer that leaves a decimal -> the decimal points
-        //   are removed
-        //   Ex: int integer = 5 / 2 = 2.5 -> 2
-        //
-        //   - When a decimal such as -0.1 is rounded, it becomes 0
-        //
-        ////////////////////////////////////////////////////////////////////////////
-        //
-        // - Handling integers with doubles in math operations turns the integers into
-        //   doubles
-        //
-        ////////////////////////////////////////////////////////////////////////////
-        //
-        // - Anatomy of an enhanced for loop with example:
-        //
-        //   char[] arrayOfChars = {a, b, c};
-        //
-        //   for (for (char x : arrayOfChars) {
-        //       System.out.println(x);
-        //   }
-        //
-        //   Output: a
-        //           b
-        //           c
-        //
-        //   The value of x becomes the value of each index of the array from 0 to the
-        //   max. In the first loop, x becomes "a", then "b", then "c". It is the same
-        //   as this loop:
-        //
-        //   for (int x = 0; x < arrayOfChars.length; x++) {
-        //       System.out.println(arrayOfChars[x]);
-        //   }
-        //
-        //   In the enhanced for loop, x becomes the value of arrayOfChars[x], as to
-        //   not have to write arrayOfChars[x] within the for loop, instead simply
-        //   writing x.
-        //
-        ////////////////////////////////////////////////////////////////////////////
-        //
-        // - Declaring and printing a matrix because why not:
-        //
-        //   int row = 5;
-        //   int column = 6;
-        //   int [][] matrix = new int [row][column];
-        //   for (int i = 0; i < matrix.length; i++) {
-        //       for (int j = 0; j < matrix.length; j++) {
-        //           System.out.print(matrix[i][j] + "\t");
-        //       }
-        //       System.out.println();
-        //   }
-        //
-        ////////////////////////////////////////////////////////////////////////////
-        //
-        // - "||" returns false only if both conditions are false:
-        //
-        //   (true || true) = true
-        //   (true || false) = true
-        //   (false || false) = false
-        //   (!true || false) = false
-        //
-        //   - "&&" returns true only if both conditions are true:
-        //
-        //    (true && true) = true
-        //    (true && false) = false
-        //    (false && false) = false
-        //    (!false && false) = true
-        //
-        ////////////////////////////////////////////////////////////////////////////
-        //
-        //
+    // Notes:
+    //
+    // - Die ganze Zahl, um Math.random() zu multiplizieren, muss das maximale minus sein
+    //   das Minimum, das 1
+    //   Ex: Zwischen 25 und 60 = (int) (Math.random() * 36) + 25
+    //
+    //   Gemeinsame Formel: (hoch - niedrig + 1) * zufällig + niedrig
+    //
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // - IndexOf-methode retourneert een geheel getal
+    //
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // - Expressie x * = y is hetzelfde als x = x * y
+    //
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // - Case of:
+    //
+    //   super.method(calculate a value then print result);
+    //   System.out.print(value);
+    //
+    // vytlačí sa pôvodná hodnota, nie nová hodnota vypočítaná volaným
+    // metóda. Výpočtová metóda šetrí novú hodnotu, ale mimo metódy,
+    // uloží sa len pôvodná hodnota
+    //
+    // - podobne: Celé číslo int = číslo 1; = celé číslo INT = 2;
+    // číslo 1 = číslo 2; = 2 = 5;
+    // číslo 2 = celé číslo; = 5 = celé číslo (stále 2);
+    // číslo vrátenu2; = návrat 2;
+    //
+    // celé číslo a číslo 1 sú seperate a int celočíselné číslo = number1; zdieľa ich
+    // hodnoty. Keď sa čísla1 stane čísla2, celé číslo uloží pôvodnú hodnotu
+    // číslo1. číslo 2 sa potom stane číslom 1.
+    //
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // - Case of: ClassB extends ClassA
+    //
+    //   ClassA class = new ClassB();
+    //
+    //   - Když je volána metoda ve třídě a metoda je přepsána ve třídě B,
+    //     Program provede kód v metodě classB
+    //   - Pokud metoda ve třídě B neexistuje, nelze ji nazvat
+    //     Ex: Ve třídě existuje metoda zvaná násobení() a ve třídě B metoda
+    //     existuje tzv. divide(). Proto, třída.Divide() nebude fungovat, protože
+    //     Divide() nepřepíše metodu ve třídě
+    //   - nicméně (třída B).Divide(); funguje proto, že vrhá objekt do
+    //     Třída B umožňující přístup k metodě Divide();
+    //   - jiný případ:
+    //
+    // Třída clasA = nová třída B;
+    // System.out.println(class.method());
+    //
+    // Ve třídě:
+    //
+    // Metoda veřejného řetězce() {
+    //  Návrat výrazu 1;
+    // }
+    //
+    // Ve třídě B:
+    //
+    // @Override
+    // Metoda veřejného řetězce() {
+    //  super.method();
+    //  Návrat výrazu 2;
+    // }
+    //
+    // Systém vytiskne pouze výraz 2, zatímco super.method() vrací výraz 1,
+    // Ale metoda ve třídě B (což je převažující metoda, která se nazývá,
+    // ne metoda ve třídě) vrací výraz 2. Proto pouze
+    // výraz 2 se vytiskne. Vrácený výraz 1 z super.method(); is
+    // není uchováván ani používán v žádném okamžiku.
+    //
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // - Modulo: %
+    //   Ia restul unei diviziuni
+    //   Ex: 5 % 2 = 1 Deoarece 5 / 2 = 2 r 1 -> Luați "r 1" ca răspuns
+    //
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // - Ett heltal dividerat med ett heltal som lämnar en decimal -> decimalerna
+    //   tas bort
+    //   Ex: int heltal = 5/2 = 2,5 -> 2
+    //
+    // - När en decimal som -0,1 avrundas blir den 0
+    //
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // - Lidar com inteiros com duplos em operações matemáticas transforma os inteiros em
+    //   duplos
+    //
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    //- Анатомія посиленої петлі з прикладом:
+    //
+    //  char [] arrayOfChars = {a, b, c};
+    //
+    //  for (для (char x: arrayOfChars) {
+    //      System.out.println (x);
+    //  }
+    //
+    //  Вихід: a
+    //  б
+    //  c
+    //
+    //  Значення x стає значенням кожного індексу масиву від 0 до
+    //  макс. у першому циклі x стає «a», потім «b», потім «c». Це те ж саме
+    //  як цей цикл:
+    //
+    //  для (int x = 0; x < arrayOfChars.length; x++) {
+    //      System.out.println (arrayOfChars [x]);
+    //  }
+    //
+    //  У розширеному для циклу, x стає значенням arrayOfChars [x], як для
+    //  не потрібно писати arrayOfChars [x] всередині циклу for, замість цього просто
+    //  запис x.
+    //
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // - Declarar e imprimir una matriz porque no:
+    //
+    //   fila interna = 5;
+    //   columna int = 6;
+    //   int [][] matriz = nueva int [fila][columna];
+    //   para (int i = 0; i < longitud de la matriz; i++) {
+    //        para (int j = 0; j < longitud de la matriz; j++) {
+    //             System.out.print(matrix[i][j] + " t");
+    //        }
+    //        System.out.println();
+    //   }
+    //
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // - "|" возвращает false только если оба условия являются ложными:
+    //
+    //   (true || true) = true
+    //   (true || false) = true
+    //   (false || false) = false
+    //   (!true || false) = false
+    //
+    // - "&&" возвращает значение true только если оба условия выполнены:
+    //
+    //   (true && true) = true
+    //   (true && false) = false
+    //   (false && false) = false
+    //   (!false && false) = true
+    //
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // - Substring() olarak bilinen küçük hata ayıklayıcı:
+    //
+    //   Telli kelime = "Eylül";
+    //   String str1 = word.substring(0, 3);
+    //   String str2 = word.substring(word.length() - 3);
+    //   System.out.println(str1 + str2);
+    //
+    //   Yazdır: Sepber
+    //
+    // - str1 substring ilk karakteri 0 da alır ve dördüncüden önce durur
+    //   karakter -> 0 = S, 1 = e, 2 = p, 3 almaz
+    // - str2, dokuz karakter olan "Eylül" uzunluğunda başlar:
+    //   9 - 3 = 6 ve sonuna kadar gider -> 6 = b, 7 = e, 8 = r, çünkü sayılır
+    //   sıfırdan başlayarak String'in gerçek uzunluğundan bire benzer
+    //   bir diziye
+    //
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    //
         
         
         
