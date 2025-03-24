@@ -18,10 +18,16 @@ public class Start
      */
     public static void main(String[] args) {
         System.out.println("Hello World");
-//        SearchingAndSorting arrayTravelTest = new SearchingAndSorting();
-//        arrayTravelTest.outputNames();
+        SearchingAndSorting arrayTravelTest = new SearchingAndSorting();
+        arrayTravelTest.outputNames();
         
-        SillyCastingTests.testBooleanCastRules();
+        // SillyCastingTests.testBooleanCastRules();
+        SillyCastingTests.testStringCastAndPriority();
+        
+        SillyFunctionTests.testSubString();
+        
+        SillyStatmentTests.testBooleanArgs();
+        
     }
 
 }
