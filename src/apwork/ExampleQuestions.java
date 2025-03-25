@@ -11,6 +11,7 @@ import apwork.questions.Q6;
 import apwork.questions.Q7;
 import apwork.questions.Q8;
 import apwork.questions.Q9;
+import apwork.questions.Unit2Question;
 import javax.swing.JOptionPane;
 
 /**
@@ -109,6 +110,8 @@ public class ExampleQuestions
     private void other(){
         
         APClassQuestionArathmaticExeption ap = new APClassQuestionArathmaticExeption();
+        
+        Unit2Question u2q = new Unit2Question();
         
     }
      

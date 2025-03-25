@@ -16,6 +16,8 @@ public class TestThings
         subStringTest();
         lastIndexOfTest();
         percentTest();
+        
+        test();
     }
     
     private void subStringTest(){
@@ -102,6 +104,60 @@ public class TestThings
         System.out.println(x % 2);
         
         System.out.println(x % 7);
+        
+    }
+    
+    private void math(){
+        
+        int x = 1;
+        
+        int y = 10;
+        
+        Math.abs(0);
+        
+        Math.ceilDiv(0, 0);
+        
+        Math.clamp(0, 0, 0);
+        
+        Math.floor(0);
+        
+        Math.getExponent(0);
+        
+        Math.max(0, 0);
+        
+        Math.min(0, 0);
+        
+        Math.pow(0, 0);
+        
+        Math.random();
+        
+    }
+    
+    private void test(){
+        
+        String oldSeq = "1100000111";
+        String segment = "11";
+        
+        System.out.println("oldSeq before: " + oldSeq);
+        
+        String newSeq = oldSeq.substring(oldSeq.indexOf(segment),
+        oldSeq.indexOf(segment) + 1);
+
+        
+        
+        if((oldSeq.indexOf(segment) + 1) == (oldSeq.length() - 1)){/////////////error here
+
+	oldSeq = oldSeq.substring(0, oldSeq.indexOf(segment));
+
+        }else{
+            
+            oldSeq = oldSeq.substring(0, oldSeq.indexOf(segment));
+            oldSeq += oldSeq.substring(oldSeq.indexOf(segment) + 2);
+
+        }
+        
+        System.out.println("oldSeq after: " + oldSeq);
+        System.out.println("newSeq = " + newSeq);
         
     }
     
