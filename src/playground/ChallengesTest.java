@@ -5,6 +5,7 @@
 
 package playground;
 
+import playground.practiceClasses.qs2q1.Game;
 import playground.practiceClasses.qs2q1.Level;
 
 /**
@@ -54,11 +55,17 @@ public class ChallengesTest {
 //            System.out.println("");
 //        }
 
+
+
         //question set 2 q1
-        Level l = new Level();
+//        Game g = new Game();
+//        g.play();
+//        System.out.println(g.getScore());
+
+        //question set 2 q3
 
         //unit 6 FRQ - Progress check
-        payRoll();
+        //payRoll();
         
         
     }

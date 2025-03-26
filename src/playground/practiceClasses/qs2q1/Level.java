@@ -11,12 +11,19 @@ package playground.practiceClasses.qs2q1;
  */
 public class Level {
 
+        private int j;
+    
+        
         public boolean goalReached() {
-            
+            return true;
         }
         
         public int getPoints() {
-            
+            return j;
+        }
+        
+        public void setPoints(int j) {
+            this.j = j;
         }
         
         

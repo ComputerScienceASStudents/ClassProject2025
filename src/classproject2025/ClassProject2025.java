@@ -2,8 +2,10 @@
 package classproject2025;
 
 import classLessons.SearchingTest;
+import classLessons.StringFunctions;
 import playground.ApPracticeSets;
 import playground.ChallengesTest;
+import playground.DumbStuff;
 
 
 /*
@@ -26,11 +28,15 @@ public class ClassProject2025
         //SearchingTest s = new SearchingTest();
         
         //playground
-        ApPracticeSets a = new ApPracticeSets(); //moved to challenges test
-        ChallengesTest c = new ChallengesTest();
-        
-        
-        
+        //ApPracticeSets a = new ApPracticeSets(); //moved to challenges test
+        //ChallengesTest c = new ChallengesTest();
+        //DumbStuff d = new DumbStuff();
+        //StringFunctions s = new StringFunctions();
+        String a = "";
+        a += 1;
+        System.out.println(a);
+        a += 1;
+        System.out.println(a);
     }
 
 }
