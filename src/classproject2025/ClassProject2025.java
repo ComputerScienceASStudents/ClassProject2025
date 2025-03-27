@@ -30,13 +30,13 @@ public class ClassProject2025
         //playground
         //ApPracticeSets a = new ApPracticeSets(); //moved to challenges test
         //ChallengesTest c = new ChallengesTest();
-        //DumbStuff d = new DumbStuff();
+        DumbStuff d = new DumbStuff();
         //StringFunctions s = new StringFunctions();
-        String a = "";
-        a += 1;
-        System.out.println(a);
-        a += 1;
-        System.out.println(a);
+//        String a = "";
+//        a += 1;
+//        System.out.println(a);
+//        a += 1;
+//        System.out.println(a);
     }
 
 }
