@@ -1072,6 +1072,19 @@ public class CompyScience42APClassProject
     // výraz 2 se vytiskne. Vrácený výraz 1 z super.method(); is
     // není uchováván ani používán v žádném okamžiku.
     //
+    //  - Egenskaper med samma namn i två olika klasser har olika regler:
+    //
+    //    I klassA:
+    //
+    //    Strängord = "Hund";
+    //
+    //    I klass B:
+    //
+    //    Strängord = "Katt";
+    //
+    //    När du skriver ut klass.word åsidosätter ordet i ClassB inte det
+    //    i ClassA, så systemet skriver ut "Dog"
+    //
     ////////////////////////////////////////////////////////////////////////////
     //
     // - Modulo: %
@@ -1167,7 +1180,27 @@ public class CompyScience42APClassProject
     //
     ////////////////////////////////////////////////////////////////////////////
     //
+    // - remove() yöntemi ArrayLists yerine diğer tüm değerleri kaldırarak
+    //   hemen ardından gelen değerler, bu nedenle atlama değerleri:
     //
+    //   LinkedList<String> sözcükler = new LinkedList<String>();
+    //
+    //   words.add("a");
+    //   words.add("b");
+    //   words.add("c");
+    //   words.add("d");
+    //   için (int i = 0; i < words.size(); i++) {
+    //        System.out.println(words.remove(i));
+    //   }
+    //
+    //   Baskılar: a
+    //             c
+    //
+    //   Remove() yöntemi, bir değeri kaldırdıktan sonra, değerin endekslerini hareket ettirir
+    //   değerleri sonra aşağı 1, böylece dizin 2 dizin 1 olur ve böylece. Orada
+    //   asla bir ArrayListeki boş endeksler değildir
+    //
+    ////////////////////////////////////////////////////////////////////////////  
         
         
         
@@ -2076,8 +2109,21 @@ public class CompyScience42APClassProject
         
         
         
-        
-        
+        // All I have is my legacy
+        // I've been losing my memory
+        // No afterlife
+        // No otherside
+        // I'm all alone
+        // When it fades to black
+        // Fades to back
+        // No afterlife
+        // No otherside
+        // I'm all alone
+        // When it fades
+        // Play, Smile
+        // Live fully
+        // When life is hard
+        // I know death's easy
         
         
         
