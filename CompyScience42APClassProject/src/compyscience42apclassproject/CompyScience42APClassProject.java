@@ -2109,21 +2109,7 @@ public class CompyScience42APClassProject
         
         
         
-        // All I have is my legacy
-        // I've been losing my memory
-        // No afterlife
-        // No otherside
-        // I'm all alone
-        // When it fades to black
-        // Fades to back
-        // No afterlife
-        // No otherside
-        // I'm all alone
-        // When it fades
-        // Play, Smile
-        // Live fully
-        // When life is hard
-        // I know death's easy
+        
         
         
         
