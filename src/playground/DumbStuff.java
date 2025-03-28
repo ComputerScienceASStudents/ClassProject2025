@@ -47,5 +47,16 @@ public class DumbStuff {
         System.out.println(str.indexOf("1"));
         System.out.println(str.substring(0, 2));
         
+        System.out.println("\n\n\n\n");
+        
+        Integer o = new Integer(8);
+        System.out.println(o.intValue() * 2);
+        
+        
+        int s = 2*2*5;
+        
+        System.out.println(s/6);
+        
+        
     }
 }
