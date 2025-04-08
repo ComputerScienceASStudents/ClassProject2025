@@ -13,4 +13,8 @@ public class C1 {
     
     //String
     public String e = "qwwwwww";
+    
+    public String toString() {
+        return "amoamoamoa";
+    }
 }

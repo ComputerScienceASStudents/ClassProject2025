@@ -104,7 +104,10 @@ public class DumbStuff {
         
         //children will inherit public methods but it cant be used outside the
         //child class
-        DogType d = new DogType();
-        d.mhm();
+        //DogType d = new DogType();
+        //d.mhm();
+        
+        //printing out the class calls the toString function
+        System.out.println(c);
     }
 }
