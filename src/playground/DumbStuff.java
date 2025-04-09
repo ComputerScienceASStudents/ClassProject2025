@@ -7,6 +7,7 @@ package playground;
 
 import playground.classesTest.C1;
 import playground.classesTest.C2;
+import playground.classesTest.C3;
 import playground.classesTest.DogType;
 
 /**
@@ -33,11 +34,11 @@ public class DumbStuff {
 //        }
         
         
-        C1 c = new C1();
-        C1 j = new C2();
+        //C1 c = new C1();
+        //C1 j = new C2();
         
         //overriding doesnt apply to paramteres of a class
-        System.out.println(j.e);
+        //System.out.println(j.e);
         
         //when adding numbers to string 
         //atrithmetic would not apply unless applied in brackets
@@ -102,12 +103,35 @@ public class DumbStuff {
         
         System.out.println(swqeqwe.substring(index, index + key.length()));
         
-        //children will inherit public methods but it cant be used outside the
-        //child class
-        //DogType d = new DogType();
-        //d.mhm();
+        
+        DogType d = new DogType("qwe");
+        d.mhm();
         
         //printing out the class calls the toString function
-        System.out.println(c);
+        //System.out.println(c);
+        
+        System.out.println("\n\n\n");
+        C1[] arr = new C2[3]; //upcasting to C1 - read as C2 
+        //C1 l = new C2(); //reminder that c2 is casted to its parent
+        
+        //C2 j = new C2();
+        
+        C1 op = new C1();
+        
+        //C2 jj = new C3();
+        
+        C1 l = new C2(p, y);
+        
+        //arr[0] = j;
+        arr[1] = l;
+        //arr[2] = op; //error here because op isnt upcasted - overriden methods
+        //              used by array will cause an error
+        //yes(l); //wont run because l isnt a c2 object
+        
+        //jj.check();
+    }
+    
+    public void yes(C2 c) {
+        c.pubpub(); //parent methods can be used
     }
 }

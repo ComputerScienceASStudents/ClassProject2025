@@ -9,11 +9,15 @@ package playground.classesTest;
  *
  * @author franz
  */
-public class DogType extends Dog {
-    private String size;
+public class C3 {
 
-    public DogType(String s) {
-        size = s;
+    
+
+    public void bbb() {
+        System.out.println("mhm");
     }
     
+    public void heg() {
+        System.out.println("gming");
+    }
 }

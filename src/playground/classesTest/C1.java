@@ -14,7 +14,22 @@ public class C1 {
     //String
     public String e = "qwwwwww";
     
+    
+    
     public String toString() {
         return "amoamoamoa";
+    }
+    
+    public void bbb() {
+        System.out.println("yeseysyeyseys");
+        heg();
+    }
+    
+    public void heg() {
+        System.out.println("yesyes");
+    }
+    
+    public void pubpub() {
+        System.out.println("yes");
     }
 }
