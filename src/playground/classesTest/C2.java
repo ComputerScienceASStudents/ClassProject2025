@@ -14,9 +14,16 @@ public class C2 extends C1 {
     //data types are not overridden
     public String e = "qwqweqw";
 
-    public C2(String a, String y) {
-        System.out.println(a + y);
+    public C2() {
+        
     }
+    
+    
+    public C2(int numWhe, String a) {
+        System.out.println(a);
+    }
+
+    
     
     public void bbb() {
         super.bbb();
@@ -30,5 +37,14 @@ public class C2 extends C1 {
     
     public void check() {
         pubpub();
+    }
+    
+    public boolean equals(C2 c){
+        
+        return true;
+    }
+    
+    public void yesnomhm() {
+        System.out.println("yes");
     }
 }

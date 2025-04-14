@@ -112,23 +112,38 @@ public class DumbStuff {
         
         System.out.println("\n\n\n");
         C1[] arr = new C2[3]; //upcasting to C1 - read as C2 
-        //C1 l = new C2(); //reminder that c2 is casted to its parent
-        
+        C1 l = new C2(); //reminder that c2 is casted to its parent
+        //upcasted objects take overriden methods but not the unique ones in child class
         //C2 j = new C2();
         
-        C1 op = new C1();
+        //C1 op = new C1();
         
         //C2 jj = new C3();
         
-        C1 l = new C2(p, y);
+        //C1 l = new C1();
+        //C2 u = new C2();
+        
         
         //arr[0] = j;
-        arr[1] = l;
+        //arr[1] = l;
         //arr[2] = op; //error here because op isnt upcasted - overriden methods
         //              used by array will cause an error
         //yes(l); //wont run because l isnt a c2 object
         
         //jj.check();
+        System.out.println((double)2/4+3);
+        
+        
+        String w = "cat";
+        String qu = "cot";
+        
+        System.out.println(w.compareTo(qu));
+        //compares chars lexicographically (alphabetical order) (a is G z is L)
+        //ONLY takes priority left to right
+        //if 0 > val - letter being compared is less than letter being comparedto
+        //if 0 < val - letter is greater
+        //if == val - letter is equal then moves to the 2nd char
+        
     }
     
     public void yes(C2 c) {

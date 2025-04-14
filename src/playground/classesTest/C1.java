@@ -14,7 +14,17 @@ public class C1 {
     //String
     public String e = "qwwwwww";
     
+    public C1() {
+        
+    }
     
+    public C1(int numWhe, String jfk) {
+        
+    }
+    
+    public C1(String jfk, int numWhe) {
+        
+    }
     
     public String toString() {
         return "amoamoamoa";
@@ -31,5 +41,10 @@ public class C1 {
     
     public void pubpub() {
         System.out.println("yes");
+    }
+    
+    public boolean equals(C1 c){
+        
+        return true;
     }
 }
