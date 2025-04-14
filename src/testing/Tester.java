@@ -37,7 +37,7 @@ public class Tester {
     
     //ArrList a = new ArrList();
     Array2dTest j = new Array2dTest();
-    ChallengesTest c = new ChallengesTest();
+    //ChallengesTest c = new ChallengesTest();
     public void pW () {
         
     }
@@ -76,16 +76,16 @@ public class Tester {
         This reference p can access all the methods and variables of the parent
         class but only overridden methods in the child class
         */
-        ParentTest p = new ChildTest(); //Parent parent = new Child();
-        
-        //downcasting
-        ChildTest c = (ChildTest)p; //Child child = (Child)parent;
-        
-        ((ChildTest)p).memememe(); //can also downcast outside intialization
-        System.out.println(((ParentTest)c).name); //can also upcast
-        
-        System.out.println(p.name);
-        System.out.println(c.name); //children can access parent vars
+//        ParentTest p = new ChildTest(); //Parent parent = new Child();
+//        
+//        //downcasting
+//        ChildTest c = (ChildTest)p; //Child child = (Child)parent;
+//        
+//        ((ChildTest)p).memememe(); //can also downcast outside intialization
+//        System.out.println(((ParentTest)c).name); //can also upcast
+//        
+//        System.out.println(p.name);
+//        System.out.println(c.name); //children can access parent vars
         
         
 //        Thing1 t = new Thing2();

@@ -37,7 +37,7 @@ public class Array2dTest {
         //type name [][] = new type[][] <-- must explicitly state the dimensions
         int marteix[][] = new int[5][10];
         
-        System.out.println(marteix[0].length);
+        //System.out.println(marteix[0].length);
         
         /*
         You can also create an initialized
@@ -81,6 +81,7 @@ public class Array2dTest {
         */
         int array[][] = createArray(7, 10);
         //display(array);
+        
         
         /*
         array outputs this
@@ -128,9 +129,10 @@ public class Array2dTest {
             {5, 6, 7, 8},
             {9, 10, 11, 12}
         };
+        System.out.println(ar[0] + "");
         
         int sum = 0;
-        System.out.println(ar[2][0]);
+        //System.out.println(ar[2][0]);
         
         //rows go left to right
         //cols go to top to bottom
@@ -156,7 +158,7 @@ public class Array2dTest {
             
             
         }
-        System.out.println(sum);
+        //System.out.println(sum);
         
     }
 
