@@ -144,6 +144,9 @@ public class DumbStuff {
         //if 0 < val - letter is greater
         //if == val - letter is equal then moves to the 2nd char
         
+        
+        int ll = 8;
+        double oo = ll;
     }
     
     public void yes(C2 c) {
