@@ -9,7 +9,7 @@ package playground.classesTest;
  *
  * @author franz
  */
-public class C3 {
+public class C3 extends C2 {
 
     
 

@@ -151,7 +151,18 @@ public class DumbStuff {
         C1[] rp = new C1[10];
         
         String yup = "apple";
-        System.out.println(yup.subSequence(yup.length() - 2, yup.length()-1));
+        
+        //SUSTRING FROM, TO DOESNT THROW AN OUT OF BOUNDS EXCEPTION
+        System.out.println(yup.substring(0, 0));
+        yeyesueueueue(yup, "uqweqpwepqwe");
+        
+        String apapap = "sing the song";
+        //int indx = 
+        int[] ar = {1, 2, 3};
+        
+//        for (int jp: ar) {
+//            System.out.println(ar[jp]);
+//        }
     }
     
     //non static methods can only be called by individual objects - same for properties
@@ -159,5 +170,9 @@ public class DumbStuff {
     //instantiated)
     public void yes(C2 c) {
         c.pubpub(); //parent methods can be used
+    }
+
+    private void yeyesueueueue(String yup, String uqweqpwepqwe) {
+        yup = "adadsad";
     }
 }
