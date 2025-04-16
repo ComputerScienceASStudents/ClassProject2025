@@ -129,7 +129,7 @@ public class Array2dTest {
             {5, 6, 7, 8},
             {9, 10, 11, 12}
         };
-        System.out.println(ar[0] + "");
+        System.out.println(ar[0][1]);
         
         int sum = 0;
         //System.out.println(ar[2][0]);
@@ -153,11 +153,15 @@ public class Array2dTest {
                 //1, 2, 3 (exclude 4)
                 //5, 6, 7 (exclude 8)
                 //so on...
-                sum += x[y];
+                //sum += x[y];
+                //System.out.println(x[y]);
             }
             
             
         }
+        
+        System.out.println(ar.length); //counts the number of rows
+        System.out.println(ar[0].length); //counts the number of columns
         //System.out.println(sum);
         
     }
