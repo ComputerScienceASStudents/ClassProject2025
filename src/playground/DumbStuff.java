@@ -147,8 +147,16 @@ public class DumbStuff {
         
         int ll = 8;
         double oo = ll;
+        
+        C1[] rp = new C1[10];
+        
+        String yup = "apple";
+        System.out.println(yup.subSequence(yup.length() - 2, yup.length()-1));
     }
     
+    //non static methods can only be called by individual objects - same for properties
+    //static methods only apply to the class - (ex. counter for num of times class is
+    //instantiated)
     public void yes(C2 c) {
         c.pubpub(); //parent methods can be used
     }
