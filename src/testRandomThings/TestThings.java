@@ -17,7 +17,10 @@ public class TestThings
         lastIndexOfTest();
         percentTest();
         
+        
         test();
+        
+        testCompareTo();
     }
     
     private void subStringTest(){
@@ -99,11 +102,26 @@ public class TestThings
          * 
          */
         
+        /**
+         * 
+         * I REMEMBER WOOOOOOOOO
+         * 
+         * This operator is called modulo. Here is it's definition:
+         * 
+         * In computing and mathematics, the modulo operation returns the 
+         * remainder or signed remainder of a division, after one number is 
+         * divided by another, called the modulus of the operation.
+         * 
+         */
+        
         int x = 48;
+        int y = 2;
         
-        System.out.println(x % 2);
+        System.out.println("modulo: " + x % 2);
         
-        System.out.println(x % 7);
+        System.out.println("modulo: " + x % 7);
+        
+        System.out.println("modulo: " + y % 10);
         
     }
     
@@ -140,24 +158,38 @@ public class TestThings
         
         System.out.println("oldSeq before: " + oldSeq);
         
-        String newSeq = oldSeq.substring(oldSeq.indexOf(segment),
-        oldSeq.indexOf(segment) + 1);
-
+        String newSeq = oldSeq.substring(oldSeq.indexOf(segment) + 2, oldSeq.length() - 1);
         
-        
-        if((oldSeq.indexOf(segment) + 1) == (oldSeq.length() - 1)){/////////////error here
-
-	oldSeq = oldSeq.substring(0, oldSeq.indexOf(segment));
-
-        }else{
-            
+        if((oldSeq.indexOf(segment) + 1) == (oldSeq.length() - 1)){
+            System.out.println("test");
             oldSeq = oldSeq.substring(0, oldSeq.indexOf(segment));
+        }else{
+            oldSeq = oldSeq.substring(oldSeq.indexOf(segment),
+                    oldSeq.indexOf(segment) + 2);
             oldSeq += oldSeq.substring(oldSeq.indexOf(segment) + 2);
-
         }
         
         System.out.println("oldSeq after: " + oldSeq);
         System.out.println("newSeq = " + newSeq);
+        
+    }
+    
+    private void testCompareTo(){
+    
+        /**
+         * 
+         * this is the compareTo method. from my understanding it converts the 
+         * first char in the string into it's decimal number (ex: A = 65, a = 97)
+         * and then it returns the difference between the numbers. However if the
+         * first two chars in each string are == then it will move to the next chars
+         * in the strings
+         * 
+         */
+        
+        String x = "due";
+        String y = "dog";
+        
+        System.out.println(x.compareTo(y));
         
     }
     
